@@ -86,11 +86,6 @@ const handleSubmit = (event) => {
     const fileUrl = "https://drive.google.com/uc?id=15AOfbeRPUTVMY-pcRNAl_lhAzCYRRz7f&export=download";
 
     downloadFile(fileUrl);
-
-    setTimeout(() => {
-      window.location.href = "https://www.instagram.com/vest.algoleve/";
-    }, 5000);
-
   }).catch(err => {
     alert("Ocorreu um erro ao enviar o formulário. Por favor, tente novamente mais tarde.");
 
