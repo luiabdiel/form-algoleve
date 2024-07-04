@@ -19,8 +19,8 @@ document.querySelector('#app').innerHTML = `
       <label>
         <span class="span-select">Deseja ser notificado sobre novidades?</span>
         <select name="notifications">
-          <option value="nao">Não</option>
-          <option value="sim">Sim</option>
+          <option value="false">Não</option>
+          <option value="true">Sim</option>
         </select>
       </label>
       <button type="submit">
@@ -54,7 +54,7 @@ const handleSubmit = (event) => {
 
   const name = nameInput.value.trim();
   const email = emailInput.value.trim();
-  const notifications = notificationsSelect.value === "sim";
+  const notifications = notificationsSelect.value === "true" ? "Sim" : "Não";
 
   if (name.length < 3) {
     alert("O nome deve ter pelo menos 3 caracteres");
