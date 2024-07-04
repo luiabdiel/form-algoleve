@@ -66,6 +66,10 @@ body {
   transition: box-shadow .3s ease-in-out;
 }
 
+.container-text button:disabled {
+  cursor: not-allowed;
+}
+
 .container-text button:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.185);
 }
