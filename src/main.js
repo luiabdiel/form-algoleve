@@ -1,9 +1,11 @@
 import '/style.css'
 
+
+
 document.querySelector('#app').innerHTML = `
    <div class="container">
     <img
-      src="./assets/image/algoleve.png"
+      src="https://raw.githubusercontent.com/luiabdiel/img-cdn-algoleve/main/algo.png"
       alt="image">
     <form class="container-text">
       <h2>Falta pouco!!</h2>
