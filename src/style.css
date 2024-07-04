@@ -61,18 +61,22 @@ body {
 }
 
 .container-text select {
+  background-color: transparent;
   border: 1px solid #DADDEC;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .container-text button {
-  margin-top: 8px;
+  margin-top: 12px;
 
   background-color: black;
   display: block;
   color: #fff;
   font-size: 1rem;
   cursor: pointer;
-  transition: box-shadow .3s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 .container-text button:disabled {
@@ -80,7 +84,7 @@ body {
 }
 
 .container-text button:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.185);
+ scale: 1.05;
 }
 
 .container-text span {
@@ -88,6 +92,10 @@ body {
   margin: 20px 0 0;
   color: #BABDCB;
   font-size: 12px;
+}
+
+.container .container-text .span-select {
+  color: #3B4169;
 }
 
 @media (max-width: 768px) {
