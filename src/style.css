@@ -22,7 +22,6 @@ body {
 
 .container img {
   width: 250px;
-  height: 400px;
   object-fit: cover;
   object-position: center;
 }
@@ -57,7 +56,17 @@ body {
   color: #656880;
 }
 
+.select-span{
+  color: black;
+}
+
+.container-text select {
+  border: 1px solid #DADDEC;
+}
+
 .container-text button {
+  margin-top: 8px;
+
   background-color: black;
   display: block;
   color: #fff;
