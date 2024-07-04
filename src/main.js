@@ -19,8 +19,8 @@ document.querySelector('#app').innerHTML = `
       <label>
         <span class="span-select">Deseja ser notificado sobre novidades?</span>
         <select name="notifications">
-          <option value="false">Não</option>
-          <option value="true">Sim</option>
+        <option value="true">Sim</option>
+        <option value="false">Não</option>
         </select>
       </label>
       <button type="submit">
