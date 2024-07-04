@@ -30,7 +30,7 @@ const KEY = import.meta.env.VITE_SHEETMONKEY_API_KEY;
 const downloadFile = (url) => {
   const link = document.createElement("a");
 
-  link.href = url + "&dl=1"; 
+  link.href = url; 
   link.setAttribute("download", "Elegância_das_cores.pdf");
   document.body.appendChild(link);
   link.click();
