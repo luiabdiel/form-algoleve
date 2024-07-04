@@ -31,6 +31,8 @@ document.querySelector('#app').innerHTML = `
 `;
 
 const KEY = import.meta.env.VITE_SHEETMONKEY_API_KEY;
+const LINK_DOWNLOAD = import.meta.env.VITE_LINK_DOWNLOAD;
+const SHEETMONKEY_URL = import.meta.env.VITE_SHEETMONKEY_URL;
 
 const downloadFile = (url) => {
   const link = document.createElement("a");
@@ -72,7 +74,7 @@ const handleSubmit = (event) => {
   button.disabled = true;
   button.innerHTML = `<div class="loading"></div>Enviando...`;
 
-  fetch(`https://api.sheetmonkey.io/form/${KEY}`, {
+  fetch(SHEETMONKEY_URL + KEY, {
     method: "POST",
     headers: {
       "accept": "application/json",
@@ -83,7 +85,7 @@ const handleSubmit = (event) => {
     button.innerHTML = `Download concluído 🎉`;
     button.disabled = false;
 
-    const fileUrl = "https://drive.google.com/uc?id=15AOfbeRPUTVMY-pcRNAl_lhAzCYRRz7f&export=download";
+    const fileUrl = LINK_DOWNLOAD;
 
     downloadFile(fileUrl);
   }).catch(err => {
